@@ -2,13 +2,13 @@ package org.example
 
 import java.text.DecimalFormat
 
-fun divide(a: Int, b: Double): Double {
+fun divide(a: Int, b: Int): Int {
     return a / b
 }
 
 fun main() {
     val result = try {
-        divide(10, 4.8)
+        divide(10, 0)
     } catch (e: ArithmeticException) {
         println("Hata Yakalandı: ${e.message}")
         -1 // Hata durumunda -1 döndür
